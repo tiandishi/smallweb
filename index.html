@@ -47,22 +47,7 @@ document.addEventListener('DOMContentLoaded', loaded, false);
 <script>
 
 function file_op(){
-	var camera={
-    "invokeCamera":function(params){
-        controllerCenter('camera','invoke_camera',params);
-    },
-    "requestAlbum":function(params){
-        controllerCenter('camera','request_albums',params);
-    },
-    "requestAlbumMulti":function(params){
-        controllerCenter('camera','request_albums_multi',params);
-    },
-    "requestAlbumMultiUpload":function(params){
-        controllerCenter('camera','request_albums_multi_upload',params);
-    }
-}
-
-	camera.requestAlbum();
+	alert("sdfs");
 }
 </script>
 </head>
@@ -102,7 +87,8 @@ function file_op(){
 </div>
 
 <ul class="mainmenu">
-	<li><a onclick="file_op()"><b><img src="images/tb01.png" /></b><span>关于我们</span></a></li>
+	<input type="file" id="file" style="display:none"/>
+	<li><a onclick="file.click()"><b><img src="images/tb01.png" /></b><span>关于我们</span></a></li>
 	<li><a href="/" ><b><img src="images/tb02.png" /></b><span>新闻中心</span></a></li>
 	<li><a href="/" ><b><img src="images/tb03.png" /></b><span>产品展示</span></a></li>
 	<li><a href="/" ><b><img src="images/tb04.png" /></b><span>成功案例</span></a></li>
