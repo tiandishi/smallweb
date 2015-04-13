@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>HTML5 MediaElement</title>	
+	<script src="js/jquery.min.js"></script>		
+	<script src="js/mediaelement.js"></script>
+
+</head>
+<style type="text/css">
+.divcss5{margin:0 auto;width:80%;} 
+</style>
+<body>
+	<div class="divcss5">
+<video id="player1" src="media/echo-hereweare.mp4" type="video/mp4" controls="controls"></video>	
+</div>
+
+	
+<script>
+MediaElement('player1', {success: function(me) {
+	
+	me.play();
+	
+}});
+</script>
+
+</body>
+</html>
