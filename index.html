@@ -16,6 +16,8 @@
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
 <style>
+.btn_music{display:inline-block;width:50px;height:50px;background:url('images/play.png') no-repeat center center;background-size:100% auto;position:absolute;z-index:100;right:15px;top:20px;}
+.btn_music.on{background-image:url("images/stop.png");}
 .banner img {width: 100%;}
 </style>
 <script type="text/javascript">
@@ -77,6 +79,9 @@ function controllerCenter(type,cmd,params){
 </script>
 <script type="text/javascript">
 var myScroll;
+function gohead(){
+   windows.location.href("index.html");
+}
 function loaded(){
 	myScroll = new iScroll('wrapper', {
 		snap: true,
@@ -89,6 +94,7 @@ function loaded(){
 	});
 }
 document.addEventListener('DOMContentLoaded', loaded, false);
+
 </script>
 
 <script>
@@ -100,7 +106,7 @@ function file_op(){
 </head>
 
 <body>
-
+<span id="playbox" class="btn_music" onclick="gohead();"></span>
 <div class="banner">
 
 	<div id="wrapper">

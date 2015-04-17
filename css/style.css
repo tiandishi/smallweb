@@ -43,7 +43,7 @@ body .mainmenu li a b{ display:block; height:180px;}
 body .mainmenu li a img{ margin: 50px auto 15px;
 width: 70px;
 height: 70px;}
-body .mainmenu li a span{ display:block; height:30px; line-height:30px;background-color:#FFF; color: #999; font-size:20px; }
+body .mainmenu li a span{ display:block; height:30px; line-height:30px;background-color:#FFF; color: #999; font-size:24px; }
 
 body .mainmenu li:nth-child(8n+1) {background-color:#36A1DB}
 body .mainmenu li:nth-child(8n+2) {background-color:#678ce1}
