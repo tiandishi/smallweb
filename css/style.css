@@ -13,10 +13,11 @@ body .mainmenu:after { clear: both; content: " "; display: block; }
 
 body .mainmenu li{ float:left;margin-left: 2.5%;
 margin-top: 2.5%;
-width: 30%;   overflow:hidden;}
+width: 30%;
+overflow:hidden;}
 
 body .phone {
-	height: 50px;
+	height: 70px;
 	background-color: #ff8a4a;
 	margin-left: 2.5%;
 	margin-right: 2.5%;
@@ -29,16 +30,16 @@ body .phone p{
 	line-height: 30px;
 	float:left;margin-left: 2.5%;
 	margin-top: 2.5%;
-	font-size: 20px;
+	font-size: 30px;
 	width: 45%; 
 }
 
 body .mainmenu li a{ display:block;  color:#FFF;   text-align:center }
-body .mainmenu li a b{ display:block; height:120px;}
-body .mainmenu li a img{ margin: 15px auto 15px;
-width: 50px;
-height: 50px;}
-body .mainmenu li a span{ display:block; height:30px; line-height:30px;background-color:#FFF; color: #999; font-size:14px; }
+body .mainmenu li a b{ display:block; height:180px;}
+body .mainmenu li a img{ margin: 50px auto 15px;
+width: 70px;
+height: 70px;}
+body .mainmenu li a span{ display:block; height:30px; line-height:30px;background-color:#FFF; color: #999; font-size:24px; }
 
 body .mainmenu li:nth-child(8n+1) {background-color:#36A1DB}
 body .mainmenu li:nth-child(8n+2) {background-color:#678ce1}
