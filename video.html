@@ -3,13 +3,35 @@
 <head>
   <title>结婚现场</title>
 </head>
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+function gohead(){
+   window.location.href="index.html";
+}
+</script>
 <style>
+.back{
+    display:inline-block;width:30px;height:30px;background:url('images/back.png') no-repeat center center;background-size:100% auto;position:absolute;z-index:100;left:15px;top:10px;
+}
+.btn_music{display:inline-block;width:30px;height:30px;background:url('images/play.png') no-repeat center center;background-size:100% auto;position:absolute;z-index:100;right:15px;top:10px;}
 </style>
 <body>
+
+<div class="row">
+  <div class="col-md-6"><span id="playbox" class="btn_music" onclick="gohead();"></span></div>
+  <div class="col-md-6"><span class="back" onclick="gohead();"></span></div>
+</div>
+<div class="row">
   <video id="media" width="window.screen.width" height="auto" controls="controls" autoplay="autoplay"> 
     <source src="http://www.minkbooks.com/content/trailer2.mp4"/>
     <source src="http://minkbooks.com/content/trailer.ogg"/>
   	Your browser does not support the video tag.
   </video> 
+</div>
 </body>
 </html>
