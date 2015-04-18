@@ -3,27 +3,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport"  content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0" />
-<title>全屏自适应支持手机端jQuery相册图片展示插件 - JS代码网</title>
+<title>x - JS代码网</title>
 <style type="text/css">
 body{font-size:14px;background-color:#fff}
 .back{
-    display:inline-block;width:30px;height:30px;background:url('images/back.png') no-repeat center center;background-size:100% auto;position:absolute;z-index:100;left:15px;top:10px;
+    display:inline-block;width:25px;height:25px;background:url('images/back.png') no-repeat center center;background-size:100% auto;position:absolute;z-index:100;left:15px;top:7px;
 }
 
-.btn_music{display:inline-block;width:30px;height:30px;background:url('images/play.png') no-repeat center center;background-size:100% auto;position:absolute;z-index:100;right:15px;top:10px;}
-.btn_music.on{background-image:url("images/stop.png");}
-.banner img {width: 100%;}
+.btn_music{display:inline-block;width:25px;height:25px;background:url('images/play.png') no-repeat center center;background-size:100% auto;position:absolute;z-index:100;right:15px;top:7px;}
 </style>
 
 <link rel="stylesheet" href="css/styles.css" />
 <link rel="stylesheet" href="touchTouch/touchTouch.css" />
-<script>
-function gohead(){
-   window.location.href="index.html";
-}
-</script>
 <!--[if lt IE 9]>
-	<script src="js/html5.js"></script>
+    <script src="js/html5.js"></script>
 <![endif]-->
 
 </head> 
@@ -31,24 +24,29 @@ function gohead(){
 <span id="playbox" class="btn_music" onclick="gohead();"></span>
 <span class="back" onclick="gohead();"></span>
 
-<div id="thumbs1">
-	<a href="img/1.jpg" style="background-image:url(img/1.jpg)" title="风景一"></a>
-	<a href="img/2.jpg" style="background-image:url(img/2.jpg)" title="风景二"></a>
-	<a href="img/3.jpg" style="background-image:url(img/3.jpg)" title="风景三"></a>
-	<a href="img/4.jpg" style="background-image:url(img/4.jpg)" title="风景四"></a>
-	<a href="img/5.jpg" style="background-image:url(img/5.jpg)" title="风景五"></a>
-	<a href="img/6.jpg" style="background-image:url(img/6.jpg)" title="风景六"></a>
-	<a href="img/7.jpg" style="background-image:url(img/7.jpg)" title="风景七"></a>
-	<a href="img/8.jpg" style="background-image:url(img/8.jpg)" title="风景八"></a>
-	<a href="img/9.jpg" style="background-image:url(img/9.jpg)" title="风景九"></a>
+<div id="thumbs">
+    <a href="img/1.jpg" style="background-image:url(img/1.jpg)" title="风景一"></a>
+    <a href="img/2.jpg" style="background-image:url(img/2.jpg)" title="风景二"></a>
+    <a href="img/3.jpg" style="background-image:url(img/3.jpg)" title="风景三"></a>
+    <a href="img/4.jpg" style="background-image:url(img/4.jpg)" title="风景四"></a>
+    <a href="img/5.jpg" style="background-image:url(img/5.jpg)" title="风景五"></a>
+    <a href="img/6.jpg" style="background-image:url(img/6.jpg)" title="风景六"></a>
+    <a href="img/7.jpg" style="background-image:url(img/7.jpg)" title="风景七"></a>
+    <a href="img/8.jpg" style="background-image:url(img/8.jpg)" title="风景八"></a>
+    <a href="img/9.jpg" style="background-image:url(img/9.jpg)" title="风景九"></a>
 </div>
+<script>
+function gohead(){
+   window.location.href="index.html";
+}
+</script>
 
 <script src="js/jquery.min.js"></script>
 <script src="touchTouch/touchTouch.jquery.js"></script>
 <script>
 $(function(){
-	$('#thumbs a').touchTouch();
+    $('#thumbs a').touchTouch();
 });
-</script>	
+</script>   
 </body>
 </html>
